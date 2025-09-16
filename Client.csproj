@@ -1,0 +1,176 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net7.0-windows7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <PublishAot>true</PublishAot>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+	<BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+	<_SuppressWinFormsTrimError>true</_SuppressWinFormsTrimError>
+	<Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+  <ItemGroup>
+	<RdXmlFile Include="rd.xml" />
+  </ItemGroup>
+	    
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="ClickableTransparentOverlay" Version="9.3.0" />
+    <PackageReference Include="DNNE" Version="2.0.6" />
+    <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.7" />
+    <PackageReference Include="Microsoft.ML.OnnxRuntime" Version="1.22.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="3.1.7" />
+    <PackageReference Include="WinFormsComInterop" Version="0.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="clicksound.wav" />
+    <None Remove="ESP.cs~RF4845c5.TMP" />
+    <None Remove="Fonts\poppins.extrabold.otf" />
+    <None Remove="Fonts\verdana.ttf" />
+    <None Remove="GreaterTheory.otf" />
+    <None Remove="Item\ac80.png" />
+    <None Remove="Item\ak47.png" />
+    <None Remove="Item\an94.png" />
+    <None Remove="Item\aug.png" />
+    <None Remove="Item\awm.png" />
+    <None Remove="Item\bizon.png" />
+    <None Remove="Item\chargebuster.png" />
+    <None Remove="Item\desert-eagle.png" />
+    <None Remove="Item\famas.png" />
+    <None Remove="Item\fist.png" />
+    <None Remove="Item\g18.png" />
+    <None Remove="Item\g36.png" />
+    <None Remove="Item\groza.png" />
+    <None Remove="Item\heal-pistol.png" />
+    <None Remove="Item\healsniper.png" />
+    <None Remove="Item\kar98k.png" />
+    <None Remove="Item\kingfisher.png" />
+    <None Remove="Item\kord.png" />
+    <None Remove="Item\m1014.png" />
+    <None Remove="Item\m14.png" />
+    <None Remove="Item\m1873.png" />
+    <None Remove="Item\m1887.png" />
+    <None Remove="Item\m1917.png" />
+    <None Remove="Item\m24.png" />
+    <None Remove="Item\m249.png" />
+    <None Remove="Item\m4a1.png" />
+    <None Remove="Item\m500.png" />
+    <None Remove="Item\m590.png" />
+    <None Remove="Item\m60.png" />
+    <None Remove="Item\m82b.png" />
+    <None Remove="Item\mac10.png" />
+    <None Remove="Item\mag7.png" />
+    <None Remove="Item\mini-uzi.png" />
+    <None Remove="Item\mp40.png" />
+    <None Remove="Item\mp5.png" />
+    <None Remove="Item\p90.png" />
+    <None Remove="Item\parafal.png" />
+    <None Remove="Item\plasma.png" />
+    <None Remove="Item\scar.png" />
+    <None Remove="Item\shield-gun.png" />
+    <None Remove="Item\sks.png" />
+    <None Remove="Item\spas12.png" />
+    <None Remove="Item\svd.png" />
+    <None Remove="Item\thompson.png" />
+    <None Remove="Item\trogon.png" />
+    <None Remove="Item\ump.png" />
+    <None Remove="Item\usp.png" />
+    <None Remove="Item\usp2.png" />
+    <None Remove="Item\vector.png" />
+    <None Remove="Item\vsk94.png" />
+    <None Remove="Item\vss.png" />
+    <None Remove="Item\woodpecker.png" />
+    <None Remove="Item\xm8.png" />
+    <None Remove="yolov8n.onnx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="clicksound.wav" />
+    <EmbeddedResource Include="Fonts\poppins.extrabold.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\Inter.SemiBold.ttf" />
+    <EmbeddedResource Include="Fonts\verdana.ttf" />
+    <EmbeddedResource Include="Item\ac80.png" />
+    <EmbeddedResource Include="Item\ak47.png" />
+    <EmbeddedResource Include="Item\an94.png" />
+    <EmbeddedResource Include="Item\aug.png" />
+    <EmbeddedResource Include="Item\awm.png" />
+    <EmbeddedResource Include="Item\bizon.png" />
+    <EmbeddedResource Include="Item\chargebuster.png" />
+    <EmbeddedResource Include="Item\desert-eagle.png" />
+    <EmbeddedResource Include="Item\famas.png" />
+    <EmbeddedResource Include="Item\fist.png" />
+    <EmbeddedResource Include="Item\g18.png" />
+    <EmbeddedResource Include="Item\g36.png" />
+    <EmbeddedResource Include="Item\groza.png" />
+    <EmbeddedResource Include="Item\heal-pistol.png" />
+    <EmbeddedResource Include="Item\healsniper.png" />
+    <EmbeddedResource Include="Item\kar98k.png" />
+    <EmbeddedResource Include="Item\kingfisher.png" />
+    <EmbeddedResource Include="Item\kord.png" />
+    <EmbeddedResource Include="Item\m1014.png" />
+    <EmbeddedResource Include="Item\m14.png" />
+    <EmbeddedResource Include="Item\m1873.png" />
+    <EmbeddedResource Include="Item\m1887.png" />
+    <EmbeddedResource Include="Item\m1917.png" />
+    <EmbeddedResource Include="Item\m24.png" />
+    <EmbeddedResource Include="Item\m249.png" />
+    <EmbeddedResource Include="Item\m4a1.png" />
+    <EmbeddedResource Include="Item\m500.png" />
+    <EmbeddedResource Include="Item\m590.png" />
+    <EmbeddedResource Include="Item\m60.png" />
+    <EmbeddedResource Include="Item\m82b.png" />
+    <EmbeddedResource Include="Item\mac10.png" />
+    <EmbeddedResource Include="Item\mag7.png" />
+    <EmbeddedResource Include="Item\mini-uzi.png" />
+    <EmbeddedResource Include="Item\mp40.png" />
+    <EmbeddedResource Include="Item\mp5.png" />
+    <EmbeddedResource Include="Item\p90.png" />
+    <EmbeddedResource Include="Item\parafal.png" />
+    <EmbeddedResource Include="Item\plasma.png" />
+    <EmbeddedResource Include="Item\scar.png" />
+    <EmbeddedResource Include="Item\shield-gun.png" />
+    <EmbeddedResource Include="Item\sks.png" />
+    <EmbeddedResource Include="Item\spas12.png" />
+    <EmbeddedResource Include="Item\svd.png" />
+    <EmbeddedResource Include="Item\thompson.png" />
+    <EmbeddedResource Include="Item\trogon.png" />
+    <EmbeddedResource Include="Item\ump.png" />
+    <EmbeddedResource Include="Item\usp.png" />
+    <EmbeddedResource Include="Item\usp2.png" />
+    <EmbeddedResource Include="Item\vector.png" />
+    <EmbeddedResource Include="Item\vsk94.png" />
+    <EmbeddedResource Include="Item\vss.png" />
+    <EmbeddedResource Include="Item\woodpecker.png" />
+    <EmbeddedResource Include="Item\xm8.png" />
+    <EmbeddedResource Include="yolov8n.onnx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Helper">
+      <HintPath>..\Helper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
